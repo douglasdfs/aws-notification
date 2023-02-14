@@ -1,8 +1,8 @@
-# **aws-notificator**
-📦☁️🔔💬 Um notificador de alertas da AWS para WhatsApp e Discord, plug and play!
+# **aws-notification**
+Um notificador de alertas da AWS para WhatsApp e Discord, plug and play!
 
 
-# **🔴 Configure as dependências**:
+# **Configure as dependências**:
   - Crie um bucket S3 na sua conta AWS para armazenar o tfstate
   - Tenha um usuário IAM na conta AWS com as credenciais em mãos para rodar o terraform e criar os recursos
   - Caso queira usar o **WhatsApp**, você precisa criar uma conta na Twillio e assinar o serviço de api, aqui tem um tutorial, você sairá do tutorial com `destination_number`, `from_number`, `account_sid` e `auth_token` em mãos: [primeiro tutorial](https://www.twilio.com/docs/whatsapp/tutorial/requesting-access-to-whatsapp), [segundo tutorial](https://www.twilio.com/docs/whatsapp/tutorial/send-and-receive-media-messages-whatsapp-python#gather-your-twilio-account-information).
@@ -23,8 +23,8 @@
   - **AWS_ACCESS_KEY_ID** *Access Key ID do usuário IAM criado acima*
   - **AWS_SECRET_ACCESS_KEY** *Secret Access Key do usuário IAM criado acima*
 
-# **👨🏻‍🏫 Como usar**:
-⚠️ **Isso é um exemplo e os valores das variáveis devem ser alterados de acordo com a sua realidade para funcionar⚠️**
+# **Utilização**:
+**Isso é um exemplo e os valores das variáveis devem ser alterados de acordo com a sua realidade para funcionar**
 
 - Clona o repositório e entra na raiz
 ```
@@ -102,13 +102,6 @@ docker run --user root:root --entrypoint="" --network host -w /app -e AWS_ACCESS
   "discord": "true",
   "whatsapp": "true",
   "from_number": "whatsapp:+14155238886",
-  "destination_number": "whatsapp:+5511952249624",
+  "destination_number": "whatsapp:+5511********",
   "discord_webhook_url": "https://discord.com/api/webhooks/000000000000000/_-xxxXxXxXxXXXXXXXxxxxxXXXxxxxxxxxXXXxxxxxxxxxxxdxxxx"
 }
-```
-# **Autor**
-👤 **Marcus Neves**
-* Github: [@nevesm](https://github.com/nevesm)
-* LinkedIn: [Marcus Neves](https://www.linkedin.com/in/mnevesti/)
-
-## 🤝 **Contribuições são bem-vindas! Por favor, envie uma issue ou PR se você acredita que algo possa ser atualizado/melhorado!**
